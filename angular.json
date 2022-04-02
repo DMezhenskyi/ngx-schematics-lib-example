@@ -3,5 +3,37 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "super-ui-lib": {
+      "projectType": "library",
+      "root": "projects/super-ui-lib",
+      "sourceRoot": "projects/super-ui-lib/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/super-ui-lib/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/super-ui-lib/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/super-ui-lib/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/super-ui-lib/src/test.ts",
+            "tsConfig": "projects/super-ui-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/super-ui-lib/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "super-ui-lib"
 }
