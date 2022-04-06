@@ -1,0 +1,181 @@
+{
+	"name": "super-ui-lib",
+	"versions": {
+		"0.0.1": {
+			"name": "super-ui-lib",
+			"version": "0.0.1",
+			"publishConfig": {
+				"registry": "http://localhost:4873"
+			},
+			"peerDependencies": {
+				"@angular/common": "^13.3.0",
+				"@angular/core": "^13.3.0"
+			},
+			"dependencies": {
+				"tslib": "^2.3.0"
+			},
+			"module": "fesm2015/super-ui-lib.mjs",
+			"es2020": "fesm2020/super-ui-lib.mjs",
+			"esm2020": "esm2020/super-ui-lib.mjs",
+			"fesm2020": "fesm2020/super-ui-lib.mjs",
+			"fesm2015": "fesm2015/super-ui-lib.mjs",
+			"typings": "super-ui-lib.d.ts",
+			"exports": {
+				"./package.json": {
+					"default": "./package.json"
+				},
+				".": {
+					"types": "./super-ui-lib.d.ts",
+					"esm2020": "./esm2020/super-ui-lib.mjs",
+					"es2020": "./fesm2020/super-ui-lib.mjs",
+					"es2015": "./fesm2015/super-ui-lib.mjs",
+					"node": "./fesm2015/super-ui-lib.mjs",
+					"default": "./fesm2020/super-ui-lib.mjs"
+				}
+			},
+			"sideEffects": false,
+			"readmeFilename": "README.md",
+			"gitHead": "917899902b58fcc1c2b19c9020b436fb9fa236df",
+			"description": "This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.",
+			"_id": "super-ui-lib@0.0.1",
+			"_nodeVersion": "16.14.2",
+			"_npmVersion": "8.5.0",
+			"dist": {
+				"integrity": "sha512-meIOmMzXQrAeQcVDeaDTxqRz/vVuLR3OeQWfoLutDa7ujIXTimcB5dNw2+lio+4JKhocoAl6VZOYV1JSjUSacg==",
+				"shasum": "e9e7d22e680351bb80eb1a7c66ab7b5454f6665e",
+				"tarball": "http://localhost:4873/super-ui-lib/-/super-ui-lib-0.0.1.tgz"
+			},
+			"contributors": []
+		},
+		"0.0.2": {
+			"name": "super-ui-lib",
+			"version": "0.0.2",
+			"publishConfig": {
+				"registry": "http://localhost:4873"
+			},
+			"ng-add": {
+				"save": "true"
+			},
+			"schematics": "./schematics/collection.json",
+			"peerDependencies": {
+				"@angular/common": "^13.3.0",
+				"@angular/core": "^13.3.0"
+			},
+			"dependencies": {
+				"tslib": "^2.3.0"
+			},
+			"module": "fesm2015/super-ui-lib.mjs",
+			"es2020": "fesm2020/super-ui-lib.mjs",
+			"esm2020": "esm2020/super-ui-lib.mjs",
+			"fesm2020": "fesm2020/super-ui-lib.mjs",
+			"fesm2015": "fesm2015/super-ui-lib.mjs",
+			"typings": "super-ui-lib.d.ts",
+			"exports": {
+				"./package.json": {
+					"default": "./package.json"
+				},
+				".": {
+					"types": "./super-ui-lib.d.ts",
+					"esm2020": "./esm2020/super-ui-lib.mjs",
+					"es2020": "./fesm2020/super-ui-lib.mjs",
+					"es2015": "./fesm2015/super-ui-lib.mjs",
+					"node": "./fesm2015/super-ui-lib.mjs",
+					"default": "./fesm2020/super-ui-lib.mjs"
+				}
+			},
+			"sideEffects": false,
+			"readmeFilename": "README.md",
+			"gitHead": "917899902b58fcc1c2b19c9020b436fb9fa236df",
+			"description": "This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.",
+			"_id": "super-ui-lib@0.0.2",
+			"_nodeVersion": "16.14.2",
+			"_npmVersion": "8.5.0",
+			"dist": {
+				"integrity": "sha512-qwkD5TXJ6ufJyaZ9u34ArLswEnDOF/QplIRri5CO/bruZMHZsmTmv9ya9YoSaohzhOdb+kDv2qDSyGDRTLKtIw==",
+				"shasum": "47fa4b34482b0a7035f3ade2076c0d36d9b96696",
+				"tarball": "http://localhost:4873/super-ui-lib/-/super-ui-lib-0.0.2.tgz"
+			},
+			"contributors": []
+		},
+		"0.0.3": {
+			"name": "super-ui-lib",
+			"version": "0.0.3",
+			"publishConfig": {
+				"registry": "http://localhost:4873"
+			},
+			"ng-add": {
+				"save": "true"
+			},
+			"schematics": "./schematics/collection.json",
+			"peerDependencies": {
+				"@angular/common": "^13.3.0",
+				"@angular/core": "^13.3.0"
+			},
+			"dependencies": {
+				"tslib": "^2.3.0"
+			},
+			"module": "fesm2015/super-ui-lib.mjs",
+			"es2020": "fesm2020/super-ui-lib.mjs",
+			"esm2020": "esm2020/super-ui-lib.mjs",
+			"fesm2020": "fesm2020/super-ui-lib.mjs",
+			"fesm2015": "fesm2015/super-ui-lib.mjs",
+			"typings": "super-ui-lib.d.ts",
+			"exports": {
+				"./package.json": {
+					"default": "./package.json"
+				},
+				".": {
+					"types": "./super-ui-lib.d.ts",
+					"esm2020": "./esm2020/super-ui-lib.mjs",
+					"es2020": "./fesm2020/super-ui-lib.mjs",
+					"es2015": "./fesm2015/super-ui-lib.mjs",
+					"node": "./fesm2015/super-ui-lib.mjs",
+					"default": "./fesm2020/super-ui-lib.mjs"
+				}
+			},
+			"sideEffects": false,
+			"readmeFilename": "README.md",
+			"gitHead": "917899902b58fcc1c2b19c9020b436fb9fa236df",
+			"description": "This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.",
+			"_id": "super-ui-lib@0.0.3",
+			"_nodeVersion": "16.14.2",
+			"_npmVersion": "8.5.0",
+			"dist": {
+				"integrity": "sha512-jxSMNIhmq5g5hODdHOKLd2H3nzeBGl2qVmVXEfMGKU8+AvSANWmIwGnhj38CXm/n5fJ25n3WalYNxtCWEJBCpg==",
+				"shasum": "fc67c658180ed8623813bc83f40d6ad2c757c0a3",
+				"tarball": "http://localhost:4873/super-ui-lib/-/super-ui-lib-0.0.3.tgz"
+			},
+			"contributors": []
+		}
+	},
+	"time": {
+		"modified": "2022-04-03T10:40:02.766Z",
+		"created": "2022-04-02T13:28:50.347Z",
+		"0.0.1": "2022-04-02T13:28:50.347Z",
+		"0.0.2": "2022-04-02T14:39:29.623Z",
+		"0.0.3": "2022-04-03T10:40:02.766Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "0.0.3"
+	},
+	"_uplinks": {},
+	"_distfiles": {},
+	"_attachments": {
+		"super-ui-lib-0.0.1.tgz": {
+			"shasum": "e9e7d22e680351bb80eb1a7c66ab7b5454f6665e",
+			"version": "0.0.1"
+		},
+		"super-ui-lib-0.0.2.tgz": {
+			"shasum": "47fa4b34482b0a7035f3ade2076c0d36d9b96696",
+			"version": "0.0.2"
+		},
+		"super-ui-lib-0.0.3.tgz": {
+			"shasum": "fc67c658180ed8623813bc83f40d6ad2c757c0a3",
+			"version": "0.0.3"
+		}
+	},
+	"_rev": "11-908a8a25d6dc846d",
+	"_id": "super-ui-lib",
+	"readme": "# SuperUiLib\n\nThis library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.\n\n## Code scaffolding\n\nRun `ng generate component component-name --project super-ui-lib` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project super-ui-lib`.\n> Note: Don't forget to add `--project super-ui-lib` or else it will be added to the default project in your `angular.json` file. \n\n## Build\n\nRun `ng build super-ui-lib` to build the project. The build artifacts will be stored in the `dist/` directory.\n\n## Publishing\n\nAfter building your library with `ng build super-ui-lib`, go to the dist folder `cd dist/super-ui-lib` and run `npm publish`.\n\n## Running unit tests\n\nRun `ng test super-ui-lib` to execute the unit tests via [Karma](https://karma-runner.github.io).\n\n## Further help\n\nTo get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page."
+}
