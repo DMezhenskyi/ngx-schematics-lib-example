@@ -4,6 +4,14 @@
     "ng-add": {
       "description": "Add Super UI Library to the project",
       "factory": "./ng-add/index#ngAdd"
+    },
+    "super-ui-component": {
+      "description": "This schematic generates super component",
+      "factory": "./super-ui-component/index#superUIComponentGenerator",
+      "schema": "./super-ui-component/schema.json",
+      "aliases": [
+        "suc"
+      ]
     }
   }
 }

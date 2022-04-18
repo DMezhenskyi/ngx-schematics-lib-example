@@ -47612,10 +47612,760 @@
 			},
 			"_hasShrinkwrap": false,
 			"contributors": []
+		},
+		"13.3.2": {
+			"name": "@angular/common",
+			"version": "13.3.2",
+			"description": "Angular - commonly needed directives and services",
+			"author": {
+				"name": "angular"
+			},
+			"license": "MIT",
+			"engines": {
+				"node": "^12.20.0 || ^14.15.0 || >=16.10.0"
+			},
+			"locales": "locales",
+			"dependencies": {
+				"tslib": "^2.3.0"
+			},
+			"exports": {
+				"./locales/global/*": {
+					"default": "./locales/global/*.js"
+				},
+				"./locales/*": {
+					"default": "./locales/*.mjs"
+				},
+				"./package.json": {
+					"default": "./package.json"
+				},
+				".": {
+					"types": "./common.d.ts",
+					"esm2020": "./esm2020/common.mjs",
+					"es2020": "./fesm2020/common.mjs",
+					"es2015": "./fesm2015/common.mjs",
+					"node": "./fesm2015/common.mjs",
+					"default": "./fesm2020/common.mjs"
+				},
+				"./http": {
+					"types": "./http/http.d.ts",
+					"esm2020": "./esm2020/http/http.mjs",
+					"es2020": "./fesm2020/http.mjs",
+					"es2015": "./fesm2015/http.mjs",
+					"node": "./fesm2015/http.mjs",
+					"default": "./fesm2020/http.mjs"
+				},
+				"./http/testing": {
+					"types": "./http/testing/testing.d.ts",
+					"esm2020": "./esm2020/http/testing/testing.mjs",
+					"es2020": "./fesm2020/http/testing.mjs",
+					"es2015": "./fesm2015/http/testing.mjs",
+					"node": "./fesm2015/http/testing.mjs",
+					"default": "./fesm2020/http/testing.mjs"
+				},
+				"./testing": {
+					"types": "./testing/testing.d.ts",
+					"esm2020": "./esm2020/testing/testing.mjs",
+					"es2020": "./fesm2020/testing.mjs",
+					"es2015": "./fesm2015/testing.mjs",
+					"node": "./fesm2015/testing.mjs",
+					"default": "./fesm2020/testing.mjs"
+				},
+				"./upgrade": {
+					"types": "./upgrade/upgrade.d.ts",
+					"esm2020": "./esm2020/upgrade/upgrade.mjs",
+					"es2020": "./fesm2020/upgrade.mjs",
+					"es2015": "./fesm2015/upgrade.mjs",
+					"node": "./fesm2015/upgrade.mjs",
+					"default": "./fesm2020/upgrade.mjs"
+				}
+			},
+			"peerDependencies": {
+				"@angular/core": "13.3.2",
+				"rxjs": "^6.5.3 || ^7.4.0"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/angular/angular.git",
+				"directory": "packages/common"
+			},
+			"ng-update": {
+				"packageGroup": [
+					"@angular/core",
+					"@angular/bazel",
+					"@angular/common",
+					"@angular/compiler",
+					"@angular/compiler-cli",
+					"@angular/animations",
+					"@angular/elements",
+					"@angular/platform-browser",
+					"@angular/platform-browser-dynamic",
+					"@angular/forms",
+					"@angular/platform-server",
+					"@angular/upgrade",
+					"@angular/router",
+					"@angular/language-service",
+					"@angular/localize",
+					"@angular/service-worker"
+				]
+			},
+			"sideEffects": [
+				"**/global/*.js",
+				"**/closure-locale.*"
+			],
+			"fesm2020": "./fesm2020/common.mjs",
+			"fesm2015": "./fesm2015/common.mjs",
+			"esm2020": "./esm2020/common.mjs",
+			"typings": "./common.d.ts",
+			"module": "./fesm2015/common.mjs",
+			"es2020": "./fesm2020/common.mjs",
+			"type": "module",
+			"bugs": {
+				"url": "https://github.com/angular/angular/issues"
+			},
+			"homepage": "https://github.com/angular/angular#readme",
+			"_id": "@angular/common@13.3.2",
+			"_nodeVersion": "14.16.1",
+			"_npmVersion": "6.14.12",
+			"dist": {
+				"integrity": "sha512-tQ2dKh5v/a0Nz6EXguw/vyms8VeRhcZO0F2xd9C+UdS3DVBftC1milluWGpjXdkLijTlJBCr114aXyZsyjNf3g==",
+				"shasum": "d64318afeb7d4db37a43347af12d24da0fce5685",
+				"tarball": "https://registry.npmjs.org/@angular/common/-/common-13.3.2.tgz",
+				"fileCount": 2961,
+				"unpackedSize": 11384612,
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIHg97bP7sj9zdKHFGBkpf+m2yA4MlEYvA6ZzolfOGYSOAiAoJywuKmCOEhHctrQquqGJCM1h6Z+lo2eAfs/z5ED1EA=="
+					}
+				],
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiTbddACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmqetQ/+OGr6sjAtwoxf0Lhqs0/wpDZVyZAMqxqjXjhbfbO9+1T+6Ut+\r\n3UjotOUGaRlbOXAKVDsQkBDKx7vJULHJ8T62F6Q+LttLDlxE6zyfZUOyjW1W\r\nsGI8rtxqwsWIgluk28nqlCiSUYLS4+Qx8qVEWPdDIBamQrw6ZBJ2Ua/TxHkY\r\npvjGdzKGlv+wfBao0o13CbjwKvqRh73nPo3tPJ1SmF0JQf5xBUQnmxZ0nRAe\r\n3TuyP9c30QMp2alg7gg/Hsnp0NJoLLs+uDMylVrA50xRDfNw4923tHE/fUj/\r\ng1bQqomEpz3QJEOFizSZ0vr/6ztK8urfG0ZbWrL6ioEN6JuQa74k3Veq7IB8\r\nHEX/MI6YwCF3jBYLbTDTUDEyVqQ8+DuLFgQHz7U8OittJAy1IKCptzsJ1e7+\r\nGb/7qV5xrh1k0yYw1JCBUsrY3t81I06CB52kPidCGwHEpcG0M5HhbYNy20Km\r\nlTJb+vGxCuRisHK+Blgqpr2kqW+IQCaqJrz8DaCBEDUt9dA7FcZdnqlzYiuI\r\nwREvidSFmn1h7C6/sS82aRWsKkYadl+g/UqFKNItIf8TVRRvB5EkoEb/ryr2\r\nYAe6DkzlpxjtRyUscaAKK6a41I+vM/R/kdcxyBYZx7VF5TO375q+mhypc47+\r\nKi3o0ZFJRBV2gxyH09PhNsKAJz/OG9trNcg=\r\n=hLh5\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "google-wombot",
+				"email": "node-team-npm+wombot@google.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "angular",
+					"email": "devops+npm@angular.io"
+				},
+				{
+					"name": "google-wombot",
+					"email": "node-team-npm+wombot@google.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/common_13.3.2_1649260381680_0.30985796348847616"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"14.0.0-next.11": {
+			"name": "@angular/common",
+			"version": "14.0.0-next.11",
+			"description": "Angular - commonly needed directives and services",
+			"author": {
+				"name": "angular"
+			},
+			"license": "MIT",
+			"engines": {
+				"node": "^14.15.0 || >=16.10.0"
+			},
+			"locales": "locales",
+			"dependencies": {
+				"tslib": "^2.3.0"
+			},
+			"exports": {
+				"./locales/global/*": {
+					"default": "./locales/global/*.js"
+				},
+				"./locales/*": {
+					"default": "./locales/*.mjs"
+				},
+				"./package.json": {
+					"default": "./package.json"
+				},
+				".": {
+					"types": "./common.d.ts",
+					"esm2020": "./esm2020/common.mjs",
+					"es2020": "./fesm2020/common.mjs",
+					"es2015": "./fesm2015/common.mjs",
+					"node": "./fesm2015/common.mjs",
+					"default": "./fesm2020/common.mjs"
+				},
+				"./http": {
+					"types": "./http/http.d.ts",
+					"esm2020": "./esm2020/http/http.mjs",
+					"es2020": "./fesm2020/http.mjs",
+					"es2015": "./fesm2015/http.mjs",
+					"node": "./fesm2015/http.mjs",
+					"default": "./fesm2020/http.mjs"
+				},
+				"./http/testing": {
+					"types": "./http/testing/testing.d.ts",
+					"esm2020": "./esm2020/http/testing/testing.mjs",
+					"es2020": "./fesm2020/http/testing.mjs",
+					"es2015": "./fesm2015/http/testing.mjs",
+					"node": "./fesm2015/http/testing.mjs",
+					"default": "./fesm2020/http/testing.mjs"
+				},
+				"./testing": {
+					"types": "./testing/testing.d.ts",
+					"esm2020": "./esm2020/testing/testing.mjs",
+					"es2020": "./fesm2020/testing.mjs",
+					"es2015": "./fesm2015/testing.mjs",
+					"node": "./fesm2015/testing.mjs",
+					"default": "./fesm2020/testing.mjs"
+				},
+				"./upgrade": {
+					"types": "./upgrade/upgrade.d.ts",
+					"esm2020": "./esm2020/upgrade/upgrade.mjs",
+					"es2020": "./fesm2020/upgrade.mjs",
+					"es2015": "./fesm2015/upgrade.mjs",
+					"node": "./fesm2015/upgrade.mjs",
+					"default": "./fesm2020/upgrade.mjs"
+				}
+			},
+			"peerDependencies": {
+				"@angular/core": "14.0.0-next.11",
+				"rxjs": "^6.5.3 || ^7.4.0"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/angular/angular.git",
+				"directory": "packages/common"
+			},
+			"ng-update": {
+				"packageGroup": [
+					"@angular/core",
+					"@angular/bazel",
+					"@angular/common",
+					"@angular/compiler",
+					"@angular/compiler-cli",
+					"@angular/animations",
+					"@angular/elements",
+					"@angular/platform-browser",
+					"@angular/platform-browser-dynamic",
+					"@angular/forms",
+					"@angular/platform-server",
+					"@angular/upgrade",
+					"@angular/router",
+					"@angular/language-service",
+					"@angular/localize",
+					"@angular/service-worker"
+				]
+			},
+			"sideEffects": [
+				"**/global/*.js",
+				"**/closure-locale.*"
+			],
+			"fesm2020": "./fesm2020/common.mjs",
+			"fesm2015": "./fesm2015/common.mjs",
+			"esm2020": "./esm2020/common.mjs",
+			"typings": "./common.d.ts",
+			"module": "./fesm2015/common.mjs",
+			"es2020": "./fesm2020/common.mjs",
+			"type": "module",
+			"readmeFilename": "README.md",
+			"bugs": {
+				"url": "https://github.com/angular/angular/issues"
+			},
+			"homepage": "https://github.com/angular/angular#readme",
+			"_id": "@angular/common@14.0.0-next.11",
+			"_nodeVersion": "14.16.1",
+			"_npmVersion": "6.14.12",
+			"dist": {
+				"integrity": "sha512-sNvZzIcp311eMZQOKSiq3nN1CuWPKIbGWzHgajLNmwnGvaTcCFnUV9DyJDIhTFF9PKDbLv/KPDhAi26xvufgDg==",
+				"shasum": "34066a91a15db3ced0cccf1071d6a4d86885e5f3",
+				"tarball": "https://registry.npmjs.org/@angular/common/-/common-14.0.0-next.11.tgz",
+				"fileCount": 2961,
+				"unpackedSize": 11487570,
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQDgIW3VDn1Zf1QN0/3EbadRiEJiUVOvLTzc/h/ZDf95pgIgHKozLhw4V0+iKHMIQTJ8XIB0WIjcYgjlG8Ppyff3TM8="
+					}
+				],
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiTbmsACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmpYzg//eyhqbn0Mc+ej00nnLWfJ6dJblN4vmSuOMo0jqgUFUjAWyZ3O\r\n/0B+nCajRJuq2pHg+W9bEo9gGFYptgX6fbkKiqCvi/rgFwnmU269Z5vL3+Y+\r\n5QaEYUTpEwIt3PofxOHOnbGt0U75ug5RiFbdY2fzz1Cs413jIiNxCmZo6eWK\r\nd/2DXG8GrzPU6BPNGl8WKK7ofaHB5MxPaqjEpE5ymx2cq6agA/OpGV1OK3Dn\r\njAv9fG2CRsgXtASfVCvICdwvVIQdRlevIg9i4ooUS6zOR6Vxbg+YL0CzD6g4\r\nTKvDoleLUJK5pmKVw6KzkBPkzbOO882xarGPFkCmVcvtCV0OXMW7iSPALZ3a\r\ngPOhgskGzSOjWoTGqS0LPq/Do58cTT56giBqyDGzT8+mOdPUAB7PNMr6xEEf\r\nkOSJv486ymF2IaHXZ3XJJsuDCmgPUhB/b/kzttTlEtaDci8kYbmnyi7Vvyky\r\nAr7om+AgJMhvf6WZ6n5l53FlOfWTJSsRGEX4oOlG04YqlRDiutLuGwjP9kUa\r\nOwQaL//dE0/zNl0gNk0b8aUFZCg6qqHGURuP/eE8hhN3kzaWeHZ56f1WguXC\r\n5Rkl6QUEkV1MMSq7DE05BMRMyfZNHIoEQo7oGrFm+K6Wb8vGfowFEMOe+LHt\r\nyqp3uu+oMbsoOzf2JOl/x2vpSsrhama+0KA=\r\n=hUNp\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "google-wombot",
+				"email": "node-team-npm+wombot@google.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "angular",
+					"email": "devops+npm@angular.io"
+				},
+				{
+					"name": "google-wombot",
+					"email": "node-team-npm+wombot@google.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/common_14.0.0-next.11_1649260972595_0.12726253080231276"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"14.0.0-next.12": {
+			"name": "@angular/common",
+			"version": "14.0.0-next.12",
+			"description": "Angular - commonly needed directives and services",
+			"author": {
+				"name": "angular"
+			},
+			"license": "MIT",
+			"engines": {
+				"node": "^14.15.0 || >=16.10.0"
+			},
+			"locales": "locales",
+			"dependencies": {
+				"tslib": "^2.3.0"
+			},
+			"exports": {
+				"./locales/global/*": {
+					"default": "./locales/global/*.js"
+				},
+				"./locales/*": {
+					"default": "./locales/*.mjs"
+				},
+				"./package.json": {
+					"default": "./package.json"
+				},
+				".": {
+					"types": "./common.d.ts",
+					"esm2020": "./esm2020/common.mjs",
+					"es2020": "./fesm2020/common.mjs",
+					"es2015": "./fesm2015/common.mjs",
+					"node": "./fesm2015/common.mjs",
+					"default": "./fesm2020/common.mjs"
+				},
+				"./http": {
+					"types": "./http/http.d.ts",
+					"esm2020": "./esm2020/http/http.mjs",
+					"es2020": "./fesm2020/http.mjs",
+					"es2015": "./fesm2015/http.mjs",
+					"node": "./fesm2015/http.mjs",
+					"default": "./fesm2020/http.mjs"
+				},
+				"./http/testing": {
+					"types": "./http/testing/testing.d.ts",
+					"esm2020": "./esm2020/http/testing/testing.mjs",
+					"es2020": "./fesm2020/http/testing.mjs",
+					"es2015": "./fesm2015/http/testing.mjs",
+					"node": "./fesm2015/http/testing.mjs",
+					"default": "./fesm2020/http/testing.mjs"
+				},
+				"./testing": {
+					"types": "./testing/testing.d.ts",
+					"esm2020": "./esm2020/testing/testing.mjs",
+					"es2020": "./fesm2020/testing.mjs",
+					"es2015": "./fesm2015/testing.mjs",
+					"node": "./fesm2015/testing.mjs",
+					"default": "./fesm2020/testing.mjs"
+				},
+				"./upgrade": {
+					"types": "./upgrade/upgrade.d.ts",
+					"esm2020": "./esm2020/upgrade/upgrade.mjs",
+					"es2020": "./fesm2020/upgrade.mjs",
+					"es2015": "./fesm2015/upgrade.mjs",
+					"node": "./fesm2015/upgrade.mjs",
+					"default": "./fesm2020/upgrade.mjs"
+				}
+			},
+			"peerDependencies": {
+				"@angular/core": "14.0.0-next.12",
+				"rxjs": "^6.5.3 || ^7.4.0"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/angular/angular.git",
+				"directory": "packages/common"
+			},
+			"ng-update": {
+				"packageGroup": [
+					"@angular/core",
+					"@angular/bazel",
+					"@angular/common",
+					"@angular/compiler",
+					"@angular/compiler-cli",
+					"@angular/animations",
+					"@angular/elements",
+					"@angular/platform-browser",
+					"@angular/platform-browser-dynamic",
+					"@angular/forms",
+					"@angular/platform-server",
+					"@angular/upgrade",
+					"@angular/router",
+					"@angular/language-service",
+					"@angular/localize",
+					"@angular/service-worker"
+				]
+			},
+			"sideEffects": [
+				"**/global/*.js",
+				"**/closure-locale.*"
+			],
+			"fesm2020": "./fesm2020/common.mjs",
+			"fesm2015": "./fesm2015/common.mjs",
+			"esm2020": "./esm2020/common.mjs",
+			"typings": "./common.d.ts",
+			"module": "./fesm2015/common.mjs",
+			"es2020": "./fesm2020/common.mjs",
+			"type": "module",
+			"readmeFilename": "README.md",
+			"bugs": {
+				"url": "https://github.com/angular/angular/issues"
+			},
+			"homepage": "https://github.com/angular/angular#readme",
+			"_id": "@angular/common@14.0.0-next.12",
+			"_nodeVersion": "16.14.2",
+			"_npmVersion": "7.20.6",
+			"dist": {
+				"integrity": "sha512-pynT77h4QCAUnSdqhlt/OurBBmJFaWtRYJDmQyL2iJYHJ6qrJ/e8u7RvIXCQ7TErx5hhJRR3Va0IAN8xIu/23g==",
+				"shasum": "162b155d1d4ddb999a55319f499794a40033c266",
+				"tarball": "https://registry.npmjs.org/@angular/common/-/common-14.0.0-next.12.tgz",
+				"fileCount": 2961,
+				"unpackedSize": 11487570,
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIGuJm0ccsh860sgqNZCIrzCoYjrXeAs4jpVIx+btJtw6AiBd2fpuAHXjDrcwDtYas1sSNFYlU+Kh+jNQxMDrhpMpfw=="
+					}
+				],
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiVdvjACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmqMNw//Y6Ir9Bgb7jYeIP9PlNR/mnkt8QstCSTfTE0XHkRdqbX+1GK8\r\nOJ5ePdfiNcVQgoVo9y1feIOD0mkqR2zUwCkH4UCIGZBFjI7l+qiWmr87WwRH\r\nHtuBZ3fx1RDkgXGtox01P+3HAioHzXAMZZrock3S/61Dsmq4rmI8dgLNYCDM\r\nrTme6tp1onHYaYXrCZGVfWrjKlKA7dfF7vDTcOLWHSgpm5/lufL8lv9Kq5Ye\r\nGns2bpQQ3LsohKxXIt63MROBaV1Xv4pzukmGUDDn1K0gIRjrru0ofQMY+EoQ\r\nWo9dRyzjlNNpRAdlKzrv5CKrBp+N2GsZ5FsHxfpP9BQa1eosCXptbzWDjrUm\r\nIPJvrp2vb108YSk0hb3MSEH5QA3RPTgznoGHP/mnoEXmwfWogSVe5sv9hiZQ\r\nyNye9OeEGSlcCbzVILK2C+QFWMNtobgjZ2ajARua5Ieu9MnALBT+IktavGMZ\r\nifwKwDikhuqOwGlmBDfYfEnDvtJQ2cge1tQZdbObovNPjhpwHddbs8x9c3DU\r\nn0x1JLbKuCRZ7+nC9qJP9hUYHuyjMPIlUDploXaf9qxlfIA+SsBL0xlAcXPW\r\ntRtibA5lgTHWC5W8tShMYXijNA1VGBuvG2RgRhPR6Do58MPNbpc4X5MiT3Jb\r\nonQfsR4nbTmw3lTop78eSliCjGKMFLLMMvM=\r\n=4hoL\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "google-wombot",
+				"email": "node-team-npm+wombot@google.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "angular",
+					"email": "devops+npm@angular.io"
+				},
+				{
+					"name": "google-wombot",
+					"email": "node-team-npm+wombot@google.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/common_14.0.0-next.12_1649794019023_0.9508263077083274"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"13.3.3": {
+			"name": "@angular/common",
+			"version": "13.3.3",
+			"description": "Angular - commonly needed directives and services",
+			"author": {
+				"name": "angular"
+			},
+			"license": "MIT",
+			"engines": {
+				"node": "^12.20.0 || ^14.15.0 || >=16.10.0"
+			},
+			"locales": "locales",
+			"dependencies": {
+				"tslib": "^2.3.0"
+			},
+			"exports": {
+				"./locales/global/*": {
+					"default": "./locales/global/*.js"
+				},
+				"./locales/*": {
+					"default": "./locales/*.mjs"
+				},
+				"./package.json": {
+					"default": "./package.json"
+				},
+				".": {
+					"types": "./common.d.ts",
+					"esm2020": "./esm2020/common.mjs",
+					"es2020": "./fesm2020/common.mjs",
+					"es2015": "./fesm2015/common.mjs",
+					"node": "./fesm2015/common.mjs",
+					"default": "./fesm2020/common.mjs"
+				},
+				"./http": {
+					"types": "./http/http.d.ts",
+					"esm2020": "./esm2020/http/http.mjs",
+					"es2020": "./fesm2020/http.mjs",
+					"es2015": "./fesm2015/http.mjs",
+					"node": "./fesm2015/http.mjs",
+					"default": "./fesm2020/http.mjs"
+				},
+				"./http/testing": {
+					"types": "./http/testing/testing.d.ts",
+					"esm2020": "./esm2020/http/testing/testing.mjs",
+					"es2020": "./fesm2020/http/testing.mjs",
+					"es2015": "./fesm2015/http/testing.mjs",
+					"node": "./fesm2015/http/testing.mjs",
+					"default": "./fesm2020/http/testing.mjs"
+				},
+				"./testing": {
+					"types": "./testing/testing.d.ts",
+					"esm2020": "./esm2020/testing/testing.mjs",
+					"es2020": "./fesm2020/testing.mjs",
+					"es2015": "./fesm2015/testing.mjs",
+					"node": "./fesm2015/testing.mjs",
+					"default": "./fesm2020/testing.mjs"
+				},
+				"./upgrade": {
+					"types": "./upgrade/upgrade.d.ts",
+					"esm2020": "./esm2020/upgrade/upgrade.mjs",
+					"es2020": "./fesm2020/upgrade.mjs",
+					"es2015": "./fesm2015/upgrade.mjs",
+					"node": "./fesm2015/upgrade.mjs",
+					"default": "./fesm2020/upgrade.mjs"
+				}
+			},
+			"peerDependencies": {
+				"@angular/core": "13.3.3",
+				"rxjs": "^6.5.3 || ^7.4.0"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/angular/angular.git",
+				"directory": "packages/common"
+			},
+			"ng-update": {
+				"packageGroup": [
+					"@angular/core",
+					"@angular/bazel",
+					"@angular/common",
+					"@angular/compiler",
+					"@angular/compiler-cli",
+					"@angular/animations",
+					"@angular/elements",
+					"@angular/platform-browser",
+					"@angular/platform-browser-dynamic",
+					"@angular/forms",
+					"@angular/platform-server",
+					"@angular/upgrade",
+					"@angular/router",
+					"@angular/language-service",
+					"@angular/localize",
+					"@angular/service-worker"
+				]
+			},
+			"sideEffects": [
+				"**/global/*.js",
+				"**/closure-locale.*"
+			],
+			"fesm2020": "./fesm2020/common.mjs",
+			"fesm2015": "./fesm2015/common.mjs",
+			"esm2020": "./esm2020/common.mjs",
+			"typings": "./common.d.ts",
+			"module": "./fesm2015/common.mjs",
+			"es2020": "./fesm2020/common.mjs",
+			"type": "module",
+			"gitHead": "cbfe6284a2cb4a0e5f8d88f833de7341d478250d",
+			"bugs": {
+				"url": "https://github.com/angular/angular/issues"
+			},
+			"homepage": "https://github.com/angular/angular#readme",
+			"_id": "@angular/common@13.3.3",
+			"_nodeVersion": "16.10.0",
+			"_npmVersion": "7.24.0",
+			"dist": {
+				"integrity": "sha512-W5rZyuilGAA+tHoTbvHHu11efUBssiiX9BKg2rQAwbdnG+hZfNs0ze28Y+2bwjTDkbLsXsQwm30gs2uie7aMyA==",
+				"shasum": "29ee3d09ef9529486da3b524a43324ae333729a9",
+				"tarball": "https://registry.npmjs.org/@angular/common/-/common-13.3.3.tgz",
+				"fileCount": 2961,
+				"unpackedSize": 11384710,
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQCvVVrbzyADd3h9fVMgLhkkA4lIGjhAbkYV/3eBnzJRxQIgKpCVdqRtTmIocCRZ+glB1vNPs1iVbWHfoC3qAvjK1iA="
+					}
+				],
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiVxfKACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmqX5A//ZRW2nUEHgcDZLIS2rb+0NwElBFUi+kUdNhzoSLg8AcjAwdz8\r\nXutM6Xj0pLLS1JZvxaNsr6XeWDp/qWPLAvFDLs2EDZnXrchvkG9lZ8v+Webf\r\n1RfbqLx135n8MdUUBt5QaLab8Pn2LOUa8wyar3JeZ0LIrfdh5zbSUvy4Iygk\r\n1AURwxAIkMwHIX+N4Z3yVLglBA9u56SsdVgEVPfUxRs7L5YLjNFDk2GWjskF\r\nTBqt4KDxeD6eWBZJgs/yX+wTK1WaQGL7YBJ2SexYrsrClyaXTKE3dsZnlODH\r\nDFAl10GsE3LksNqkrozJA/zU4L4S+PMm363yegovKerQZDED88VlRJDNVhbM\r\n5oPhEZWgczD6Klis61gVTSCzLrBKJnQhMOx7+AA3qcfh3isF22E2wa5EjmVJ\r\niHsxROkWqSualMbaH3qedObVz3Ta1ivqE40DdqVEObSGyg8SL8OFC4qbAiVm\r\n/PXdooysUfyVbyjjhWUdFkOqL1KI+g/0Rp0ULji2mgORiaR/kDp1drghd6Ux\r\nYk4n9Se3huTPTD7Xbfk7U7szWixwKsLzcRRiyWG6zgsblwhBkDb96Zq5W+oA\r\nMlOjfJcIw29srXyva3T9gXsRCeSLODjOiiZMYzL+JEauqvf9Na/oHYbntMPQ\r\nnadDR49Gc9UIGVRi3BvBX2jQRCWrch1rq+g=\r\n=jtg/\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "google-wombot",
+				"email": "node-team-npm+wombot@google.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "angular",
+					"email": "devops+npm@angular.io"
+				},
+				{
+					"name": "google-wombot",
+					"email": "node-team-npm+wombot@google.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/common_13.3.3_1649874890101_0.9254457900893034"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"14.0.0-next.13": {
+			"name": "@angular/common",
+			"version": "14.0.0-next.13",
+			"description": "Angular - commonly needed directives and services",
+			"author": {
+				"name": "angular"
+			},
+			"license": "MIT",
+			"engines": {
+				"node": "^14.15.0 || >=16.10.0"
+			},
+			"locales": "locales",
+			"dependencies": {
+				"tslib": "^2.3.0"
+			},
+			"exports": {
+				"./locales/global/*": {
+					"default": "./locales/global/*.js"
+				},
+				"./locales/*": {
+					"default": "./locales/*.mjs"
+				},
+				"./package.json": {
+					"default": "./package.json"
+				},
+				".": {
+					"types": "./common.d.ts",
+					"esm2020": "./esm2020/common.mjs",
+					"es2020": "./fesm2020/common.mjs",
+					"es2015": "./fesm2015/common.mjs",
+					"node": "./fesm2015/common.mjs",
+					"default": "./fesm2020/common.mjs"
+				},
+				"./http": {
+					"types": "./http/http.d.ts",
+					"esm2020": "./esm2020/http/http.mjs",
+					"es2020": "./fesm2020/http.mjs",
+					"es2015": "./fesm2015/http.mjs",
+					"node": "./fesm2015/http.mjs",
+					"default": "./fesm2020/http.mjs"
+				},
+				"./http/testing": {
+					"types": "./http/testing/testing.d.ts",
+					"esm2020": "./esm2020/http/testing/testing.mjs",
+					"es2020": "./fesm2020/http/testing.mjs",
+					"es2015": "./fesm2015/http/testing.mjs",
+					"node": "./fesm2015/http/testing.mjs",
+					"default": "./fesm2020/http/testing.mjs"
+				},
+				"./testing": {
+					"types": "./testing/testing.d.ts",
+					"esm2020": "./esm2020/testing/testing.mjs",
+					"es2020": "./fesm2020/testing.mjs",
+					"es2015": "./fesm2015/testing.mjs",
+					"node": "./fesm2015/testing.mjs",
+					"default": "./fesm2020/testing.mjs"
+				},
+				"./upgrade": {
+					"types": "./upgrade/upgrade.d.ts",
+					"esm2020": "./esm2020/upgrade/upgrade.mjs",
+					"es2020": "./fesm2020/upgrade.mjs",
+					"es2015": "./fesm2015/upgrade.mjs",
+					"node": "./fesm2015/upgrade.mjs",
+					"default": "./fesm2020/upgrade.mjs"
+				}
+			},
+			"peerDependencies": {
+				"@angular/core": "14.0.0-next.13",
+				"rxjs": "^6.5.3 || ^7.4.0"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/angular/angular.git",
+				"directory": "packages/common"
+			},
+			"ng-update": {
+				"packageGroup": [
+					"@angular/core",
+					"@angular/bazel",
+					"@angular/common",
+					"@angular/compiler",
+					"@angular/compiler-cli",
+					"@angular/animations",
+					"@angular/elements",
+					"@angular/platform-browser",
+					"@angular/platform-browser-dynamic",
+					"@angular/forms",
+					"@angular/platform-server",
+					"@angular/upgrade",
+					"@angular/router",
+					"@angular/language-service",
+					"@angular/localize",
+					"@angular/service-worker"
+				]
+			},
+			"sideEffects": [
+				"**/global/*.js",
+				"**/closure-locale.*"
+			],
+			"fesm2020": "./fesm2020/common.mjs",
+			"fesm2015": "./fesm2015/common.mjs",
+			"esm2020": "./esm2020/common.mjs",
+			"typings": "./common.d.ts",
+			"module": "./fesm2015/common.mjs",
+			"es2020": "./fesm2020/common.mjs",
+			"type": "module",
+			"readmeFilename": "README.md",
+			"gitHead": "fbbed3d723fa4d255e59acd63d89961bc6f9e62f",
+			"bugs": {
+				"url": "https://github.com/angular/angular/issues"
+			},
+			"homepage": "https://github.com/angular/angular#readme",
+			"_id": "@angular/common@14.0.0-next.13",
+			"_nodeVersion": "16.10.0",
+			"_npmVersion": "7.24.0",
+			"dist": {
+				"integrity": "sha512-eao5v+DeQcJQtArRCyFBliCg9xTb0N3BZTu7M3hBzqIAv4xrb6qCAsC9CkWke/S3xbwWKeGBuU6oJhkwLkR6EQ==",
+				"shasum": "80981b709a5ac9a350fbddabed3d508eb25ed9d7",
+				"tarball": "https://registry.npmjs.org/@angular/common/-/common-14.0.0-next.13.tgz",
+				"fileCount": 2961,
+				"unpackedSize": 11487570,
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIHXlX5Lg6yn/e1oQhZiDt3psLnOh30YWWm2i44VBbrgxAiEAupz0X14Fk6Rg+cX4ws/13k79uGIiSihcsCRjl/6WceM="
+					}
+				],
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiVxofACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmpL2A/+NoJgGo6lFZGQ9EIlRhSMm33tkXpXrkintUzt8CRag20NpGil\r\nvHNr/ARKSL8woW1KcWUjUABdeJTCXN6vprn4/I0mWIhWgnpckLN4WQkOkZTS\r\nCck8m5OcvDmXCU++7jp+bN9qZ5kXIcMeeqcogECNe7N1GPNQ7/xgttMAO3va\r\n2RbOf1INL69OROcOTV7/bKuqOwBAaSxGLhwlaTbsvDBius5EUHYLH7F7q/rx\r\n5rK+LNhvOjJBiBwmDNNQlwa5tiWUGadRQY+ve7akgA07ufhrWeZo+XRkv3g8\r\nD4PcUxzSKoZWpvQOCl2QSzhcWAuTYj0ETddJ/1H0KejzybB7GQ+Fox8cmLcc\r\n+Bf8voBfeLH7GM3aKTdSCoTaRl4DKkJX0Iy+T+oyia/W/RZ35FqhhJwzcpJu\r\nABNexTkhOoIJA/dUkl8UlxIlSvqXSXfIesY/QteWkwGAdcAFdUdEQPDEsiTN\r\nr+XiPNhlbvo07a/IfkWItLLXiDntUkst3IcwCVvDhPT6EpL5MkYWoUdWoRtq\r\nBaGcOvdbxAeEMakdUOPmjWULtQbR4Do8zVDLs7AGP7SSRs8PQ69eRrvOuweA\r\n6PtroOUZr2NtQUxJ6mnVOmyyJgDqH6nZrjPscfvME26kXiMuCp33/xStAeeE\r\ngpEI5BVxZUY4nTNUezajg/7PoRp8Z2mD89Q=\r\n=QqPe\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "google-wombot",
+				"email": "node-team-npm+wombot@google.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "angular",
+					"email": "devops+npm@angular.io"
+				},
+				{
+					"name": "google-wombot",
+					"email": "node-team-npm+wombot@google.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/common_14.0.0-next.13_1649875487467_0.27394005015560996"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
 		}
 	},
 	"time": {
-		"modified": "2022-03-30T21:27:43.022Z",
+		"modified": "2022-04-13T18:44:47.903Z",
 		"created": "2016-04-28T04:23:44.329Z",
 		"0.0.0-0": "2016-04-28T04:23:44.329Z",
 		"0.0.0-1": "2016-04-29T22:26:22.244Z",
@@ -48190,14 +48940,19 @@
 		"14.0.0-next.8": "2022-03-25T17:48:37.258Z",
 		"14.0.0-next.9": "2022-03-25T19:45:19.641Z",
 		"14.0.0-next.10": "2022-03-30T21:17:08.281Z",
-		"13.3.1": "2022-03-30T21:27:42.939Z"
+		"13.3.1": "2022-03-30T21:27:42.939Z",
+		"13.3.2": "2022-04-06T15:53:01.888Z",
+		"14.0.0-next.11": "2022-04-06T16:02:52.814Z",
+		"14.0.0-next.12": "2022-04-12T20:06:59.283Z",
+		"13.3.3": "2022-04-13T18:34:50.707Z",
+		"14.0.0-next.13": "2022-04-13T18:44:47.819Z"
 	},
 	"users": {},
 	"dist-tags": {
-		"latest": "13.3.1",
+		"latest": "13.3.3",
 		"v4-lts": "4.4.7",
 		"v5-lts": "5.2.11",
-		"next": "14.0.0-next.10",
+		"next": "14.0.0-next.13",
 		"v7-lts": "7.2.15",
 		"v6-lts": "6.1.10",
 		"v9-lts": "9.1.13",
@@ -48208,8 +48963,8 @@
 	},
 	"_uplinks": {
 		"npmjs": {
-			"etag": "W/\"1e80f3454b809874ab284dfd97631cce\"",
-			"fetched": 1649075974183
+			"etag": "W/\"3b8d7f20624077f8ccbba9fdc76e15c8\"",
+			"fetched": 1650117584570
 		}
 	},
 	"_distfiles": {
@@ -51072,10 +51827,35 @@
 			"url": "https://registry.npmjs.org/@angular/common/-/common-13.3.1.tgz",
 			"sha": "01c36734014cc46e5d16577dd3b9d8ae1885723f",
 			"registry": "npmjs"
+		},
+		"common-13.3.2.tgz": {
+			"url": "https://registry.npmjs.org/@angular/common/-/common-13.3.2.tgz",
+			"sha": "d64318afeb7d4db37a43347af12d24da0fce5685",
+			"registry": "npmjs"
+		},
+		"common-14.0.0-next.11.tgz": {
+			"url": "https://registry.npmjs.org/@angular/common/-/common-14.0.0-next.11.tgz",
+			"sha": "34066a91a15db3ced0cccf1071d6a4d86885e5f3",
+			"registry": "npmjs"
+		},
+		"common-14.0.0-next.12.tgz": {
+			"url": "https://registry.npmjs.org/@angular/common/-/common-14.0.0-next.12.tgz",
+			"sha": "162b155d1d4ddb999a55319f499794a40033c266",
+			"registry": "npmjs"
+		},
+		"common-13.3.3.tgz": {
+			"url": "https://registry.npmjs.org/@angular/common/-/common-13.3.3.tgz",
+			"sha": "29ee3d09ef9529486da3b524a43324ae333729a9",
+			"registry": "npmjs"
+		},
+		"common-14.0.0-next.13.tgz": {
+			"url": "https://registry.npmjs.org/@angular/common/-/common-14.0.0-next.13.tgz",
+			"sha": "80981b709a5ac9a350fbddabed3d508eb25ed9d7",
+			"registry": "npmjs"
 		}
 	},
 	"_attachments": {},
-	"_rev": "4-8fd3ea4ba2ebba3c",
+	"_rev": "6-ebcdc2420c1b3a2b",
 	"_id": "@angular/common",
 	"readme": "Angular\n=======\n\nThe sources for this package are in the main [Angular](https://github.com/angular/angular) repo. Please file issues and pull requests against that repo.\n\nUsage information and reference details can be found in [Angular documentation](https://angular.io/docs).\n\nLicense: MIT"
 }

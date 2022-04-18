@@ -1,0 +1,15 @@
+import { Component, OnInit } from '@angular/core';
+import { SuperUiLibService } from 'super-ui-lib'
+
+@Component({
+  selector: '<%= dasherize(name) %>',
+  template: `<p><%= dasherize(name) %> works!</p>`
+})
+export class <%= classify(name) %>Component implements OnInit {
+
+  constructor(private superUIService: SuperUiLibService) { }
+
+  ngOnInit(): void {
+  }
+
+}
